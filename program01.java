@@ -1,6 +1,5 @@
 /**
-Printing a string using println method
-22/02/2022
+* Printing a string using println method
 */
 
 public class program01 
