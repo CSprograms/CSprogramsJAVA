@@ -1,6 +1,5 @@
 /**
-String concatenation VS Addition
-22/02/2022
+* String concatenation VS Addition
 */
 
 public class program07
