@@ -1,6 +1,7 @@
 /**
-* Printing a string using println method
-*/
+ * Printing a string using println method
+ */
+
 
 public class program01 
 {
