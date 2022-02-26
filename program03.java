@@ -1,6 +1,5 @@
 /**
-Printing multi-line string using multiple println method
-22/02/2022
+* Printing multi-line string using multiple println method
 */
 
 public class program03
