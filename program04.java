@@ -1,6 +1,5 @@
 /**
-println vs print method
-22-02-2022
+* println vs print method
 */
 
 public class program04
