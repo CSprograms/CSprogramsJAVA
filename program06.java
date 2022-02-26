@@ -1,6 +1,5 @@
 /**
-String formatting in printf method
-22/02/2022
+* String formatting in printf method
 */
 
 public class program06
