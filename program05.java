@@ -1,6 +1,5 @@
 /**
-String concatenation in println method
-22/02/2022
+* String concatenation in println method
 */
 
 public class program05
