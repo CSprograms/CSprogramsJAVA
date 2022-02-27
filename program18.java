@@ -1,10 +1,12 @@
 /**
- * Swa
+ * Swaping
  */
 import java.util.Scanner;
 public class program18 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter Input 1 : ");
 
         int input1 = input.nextInt(); 
         int input2 = input.nextInt();
@@ -22,5 +24,5 @@ public class program18 {
         System.out.println("Input 1 : " + input1);
         System.out.println("Input 2 : " + input2);
 
-    }    
+    }
 }
