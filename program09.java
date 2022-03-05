@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class program09 {
   public static void main(String[] args) {
     Scanner ip = new Scanner(System.in);
-    
+
     System.out.print("Enter Input 1 : ");
     int ip1 = ip.nextInt();
     
