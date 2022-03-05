@@ -8,7 +8,9 @@ public class program08
    {
 	  int var1 = 5;
 	  int var2 = 3;
-      System.out.println("String Concatenation: " + var1 + var2);
+      
+     System.out.println("String Concatenation: " + var1 + var2);
+     
 	  System.out.print("Addition: " + (var1 + var2));
    } 
 } 
