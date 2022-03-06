@@ -1,6 +1,5 @@
 /**
- * Biggest amonng Two Numbers -- Version 2
- * Using if else
+ * Swaping -- with temporary variable
  */
 import java.util.Scanner;
 public class program20 {
@@ -12,17 +11,20 @@ public class program20 {
 
         System.out.print("Enter Input 2 : ");
         int input2 = input.nextInt();
+        
         input.close();
 
-        int biggest;
-        
-        if(input1 > input2) {
-            biggest = input1;
-        }
-        else {
-            biggest = input2;
-        }
+        System.out.println("Before Swap");
+        System.out.println("Input 1 : " + input1);
+        System.out.println("Input 2 : " + input2);
 
-        System.out.println("Biggest Value : " + biggest);
+        int temp = input1;
+        input1 = input2;
+        input2 = temp;
+
+        System.out.println("After Swap");
+        System.out.println("Input 1 : " + input1);
+        System.out.println("Input 2 : " + input2);
+
     }
 }
