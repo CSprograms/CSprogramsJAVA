@@ -17,8 +17,11 @@ public class program26 {
         System.out.println("String 1 : " + string1);
         System.out.println("String 2 : " + string2);
 
-        if (string1.toLowerCase().equals(string2.toLowerCase())) {
+        if (string1.equals(string2)) {
             System.out.print("Both the strings are identical");
+        }
+        else if (string1.equalsIgnoreCase(string2)) {
+            System.out.print("Both the strings are identical, but differs in case.");
         }
         else {
             System.out.print("Strings are non identical");            
