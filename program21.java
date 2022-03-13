@@ -1,5 +1,5 @@
 /**
- * Swaping -- without temporary variable
+ * Swaping -- with temporary variable
  */
 import java.util.Scanner;
 public class program21 {
@@ -18,9 +18,9 @@ public class program21 {
         System.out.println("Input 1 : " + input1);
         System.out.println("Input 2 : " + input2);
 
-        input1 = input1 + input2;
-        input2 = input1 - input2;
-        input1 = input1 - input2;
+        int temp = input1;
+        input1 = input2;
+        input2 = temp;
 
         System.out.println("After Swap");
         System.out.println("Input 1 : " + input1);
