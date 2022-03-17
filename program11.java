@@ -8,13 +8,13 @@ public class program11 {
         Scanner ip = new Scanner(System.in);
 
         System.out.print("Enter the Celsius : ");
-        int c = ip.nextInt();
+        double c = ip.nextDouble();
 
         ip.close();
         
-        int f = 32 + (( 9 * c)/5);
+        double f = 32 + ( ( 9 * c ) / 5 );
 
-        System.out.println("Celsius : " + c);
-        System.out.print("Fahrenheit : " + f);
+        System.out.println("Celsius : " + Math.round(c));
+        System.out.print("Fahrenheit : " + Math.round(f));
     }
 }
