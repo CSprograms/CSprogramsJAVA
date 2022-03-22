@@ -12,6 +12,7 @@ public class program31 {
 
         System.out.print("Enter Input 2 : ");
         int input2 = input.nextInt();
+		
         input.close();
 
         int biggest = input1 > input2 ? input1 : input2;
