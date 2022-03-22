@@ -14,7 +14,7 @@ public class program29 {
 
         input.close();
         
-        double c = ( Fahrenheit - 32 ) * ( 5 / 9 );
+        double c = ( f - 32 ) * ( 5 / 9 );
 
         System.out.println("Fahrenheit : " + Math.round(f));
         System.out.print("Celsius : " + Math.round(c));
