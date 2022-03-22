@@ -1,6 +1,6 @@
 /**
  * Biggest amonng Two Numbers -- Version 2
- * Using Simple if
+ * Using if else
  */
 import java.util.Scanner;
 public class program32 {
@@ -14,9 +14,12 @@ public class program32 {
         int input2 = input.nextInt();
         input.close();
 
-        int biggest = input1;
+        int biggest;
         
-        if( input2 > biggest ) {
+        if(input1 > input2) {
+            biggest = input1;
+        }
+        else {
             biggest = input2;
         }
 
