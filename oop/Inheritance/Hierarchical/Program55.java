@@ -4,8 +4,8 @@
 package oop.Inheritance.Hierarchical;
 class inputs {
 
-    int operand1;
-    int operand2;
+    private int operand1;
+    private int operand2;
     
     inputs() {
         this.operand1 = 0;
@@ -31,45 +31,69 @@ class inputs {
     }
 }
 
-class Arithmetic extends inputs {
+class Addition extends inputs {
     
     private int sum;
 
-    Arithmetic(){
+    Addition(){
         super();
     }
 
-    Arithmetic(int ip1) {
+    Addition(int ip1) {
         super(ip1);
     }
 
-    Arithmetic(int ip1, int ip2) {
+    Addition(int ip1, int ip2) {
         super(ip1, ip2);
     }
 
-    public void calculateArithmetic() {
+    public void calculateAddition() {
         this.sum = super.getOperand1() + super.getOperand2();        
     }
 
     public void display() {
         System.out.println("Input 1 : " + super.getOperand1());
-        System.out.println("Inpet 2 : " + super.getOperand2());
-        System.out.println("Sum : " + sum);        
+        System.out.println("Input 2 : " + super.getOperand2());
+        System.out.println("Sum : " + this.sum);        
     }
 }
+
+class Subtraction extends inputs {
+    
+    private int difference;
+
+    Subtraction(){
+        super();
+    }
+
+    Subtraction(int ip1) {
+        super(ip1);
+    }
+
+    Subtraction(int ip1, int ip2) {
+        super(ip1, ip2);
+    }
+
+    public void calculateSubtraction() {
+        this.difference = super.getOperand1() - super.getOperand2();        
+    }
+
+    public void display() {
+        System.out.println("Input 1 : " + super.getOperand1());
+        System.out.println("Input 2 : " + super.getOperand2());
+        System.out.println("Difference : " + this.difference);        
+    }
+}
+
 public class Program55 {
     public static void main(String[] args) {
         
-        Arithmetic obj1 = new Arithmetic();
-        obj1.calculateArithmetic();
+        Addition obj1 = new Addition(6);
+        obj1.calculateAddition();
         obj1.display();
 
-        Arithmetic obj2 = new Arithmetic(6);
-        obj2.calculateArithmetic();
+        Subtraction obj2 = new Subtraction(6, 24);
+        obj2.calculateSubtraction();
         obj2.display();
-
-        Arithmetic obj3 = new Arithmetic(6, 24);
-        obj3.calculateArithmetic();
-        obj3.display();
     }    
 }
