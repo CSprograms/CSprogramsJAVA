@@ -5,8 +5,8 @@ package oop.Inheritance.Single;
 
 class inputs {
 
-    int operand1;
-    int operand2;
+    private int operand1;
+    private int operand2;
     
     inputs() {
         this.operand1 = 0;
@@ -54,7 +54,7 @@ class Addition extends inputs {
 
     public void display() {
         System.out.println("Input 1 : " + super.getOperand1());
-        System.out.println("Inpet 2 : " + super.getOperand2());
+        System.out.println("Input 2 : " + super.getOperand2());
         System.out.println("Sum : " + sum);        
     }
 }
