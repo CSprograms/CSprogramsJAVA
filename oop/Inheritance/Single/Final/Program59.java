@@ -1,7 +1,7 @@
 /**
  * Single Inheritance - Final MethodClass - Compilation Error
  */
-//package oop.Inheritance.Single.Final;
+package oop.Inheritance.Single.Final;
 
 class Parent {
 
