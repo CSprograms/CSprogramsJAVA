@@ -1,6 +1,11 @@
-class A extends Thread {
+/**
+ * Multithreading - start(), start() and start()
+ */
+package multiThread;
+
+class A1 extends Thread {
 	public void run() {
-		System.out.println("A Starts");
+		System.out.println("A1 Starts");
 		for (int i = 1; i <= 5; i++) {
 			System.out.println("From Thread A : i = " + i);
 		}
@@ -8,7 +13,7 @@ class A extends Thread {
 	}
 }
 
-class B extends Thread {
+class B1 extends Thread {
 	public void run() {
 		System.out.println("B Starts");
 		for (int j = 1; j <= 5; j++) {
@@ -18,7 +23,7 @@ class B extends Thread {
 	}
 }
 
-class C extends Thread {
+class C1 extends Thread {
 	public void run() {
 		System.out.println("C Starts");
 		for (int k = 1; k <= 5; k++) {
@@ -30,8 +35,12 @@ class C extends Thread {
 
 class ThreadTest1 {
 	public static void main(String[] args) {
-		new A().start();
-		new B().start();
-		new C().start();
+		A1 threadA = new A1();
+		B1 threadB = new B1();
+		C1 threadC = new C1();
+
+		threadA.start();
+		threadB.start();
+		threadC.start();
 	}
 }
