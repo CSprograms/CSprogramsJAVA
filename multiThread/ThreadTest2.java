@@ -42,5 +42,7 @@ class ThreadTest2 {
 		threadA.run();
 		threadB.run();
 		threadC.run();
+
+		System.out.println("Thread main ends..");
 	}
 }
