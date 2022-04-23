@@ -5,7 +5,7 @@ package multiThread;
 
 class A1 extends Thread {
 	public void run() {
-		System.out.println("A1 Starts");
+		System.out.println("A Starts");
 		for (int i = 1; i <= 5; i++) {
 			System.out.println("From Thread A : i = " + i);
 		}
@@ -42,5 +42,7 @@ class ThreadTest1 {
 		threadA.start();
 		threadB.start();
 		threadC.start();
+
+		System.out.println("Thread main ends..");
 	}
 }
