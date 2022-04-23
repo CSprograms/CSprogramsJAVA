@@ -1,14 +1,16 @@
 /**
  * Multithreading - stop() Depricated
+ * java.util.concurrent.Executors
+ * java.util.concurrent.ExecutorService
  */
 package multiThread;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ExecutorService;
 
 class A7 extends Thread {
 	public void run() {
 		System.out.println("A Starts");
 		for (int i = 1; i <= 5; i++) {
-			if (i == 3)
-				stop();
 			System.out.println("From Thread A : i = " + i);
 		}
 		System.out.println("Exit from A");
@@ -41,8 +43,15 @@ class ThreadTest7 {
 		B7 threadB = new B7();
 		C7 threadC = new C7();
 
-		threadA.start();
-		threadB.start();
-		threadC.start();
+		ExecutorService executeService = Executors.newCachedThreadPool();
+
+		executeService.execute(threadA);
+		executeService.execute(threadB);
+		executeService.execute(threadC);
+
+		executeService.shutdown();
+
+		System.out.println("Thread main ends..");
+
 	}
 }
