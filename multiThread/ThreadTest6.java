@@ -44,5 +44,7 @@ class ThreadTest6 {
 		threadA.start();
 		threadB.start();
 		threadC.start();
+
+		System.out.println("Thread main ends..");
 	}
 }
